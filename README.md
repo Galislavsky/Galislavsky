@@ -14,6 +14,10 @@ I learn programming by doing – through my own projects that actually run in pr
 - dynamic Join-to-Create voice channels
 - image generation (Pillow) and scheduled tasks (`tasks.loop`, asyncio)
 
+**A web leaderboard for the bot** (Flask) – rankings and member profiles in the browser:
+- reads the bot's database live, member names and avatars from the Discord API
+- Gunicorn behind nginx, HTTPS with Let's Encrypt, own domain
+
 ### 🛠️ Tech stack
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![discord.py](https://img.shields.io/badge/discord.py-5865F2?logo=discord&logoColor=white)
@@ -23,9 +27,12 @@ I learn programming by doing – through my own projects that actually run in pr
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)
 ![PM2](https://img.shields.io/badge/PM2-2B037A?logo=pm2&logoColor=white)
 ![SSH](https://img.shields.io/badge/SSH-000000?logo=gnubash&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![nginx](https://img.shields.io/badge/nginx-009639?logo=nginx&logoColor=white)
+![Let's Encrypt](https://img.shields.io/badge/Let's%20Encrypt-003A70?logo=letsencrypt&logoColor=white)
 
 ### 🖥️ Infrastructure
-My own VPS servers (Ubuntu), processes managed with PM2, secrets kept in `.env`, game server hosting.
+My own VPS servers (Ubuntu), processes managed with PM2, nginx as a reverse proxy with HTTPS, DNS and domains, secrets kept in `.env`, game server hosting.
 
 ---
 
@@ -43,5 +50,9 @@ Programowania uczę się w praktyce – na własnych projektach, które naprawd�
 - dynamiczne kanały głosowe Join-to-Create
 - generowanie grafik (Pillow) i zadania cykliczne (`tasks.loop`, asyncio)
 
+**Ranking www dla bota** (Flask) – rankingi i profile członków w przeglądarce:
+- czyta bazę bota na bieżąco, nicki i avatary pobiera z Discord API
+- Gunicorn za nginx, HTTPS z Let's Encrypt, własna domena
+
 ### 🖥️ Infrastruktura
-Własne serwery VPS (Ubuntu), procesy pod PM2, zmienne środowiskowe w `.env`, hostowanie serwerów gier.
+Własne serwery VPS (Ubuntu), procesy pod PM2, nginx jako reverse proxy z HTTPS, DNS i domeny, zmienne środowiskowe w `.env`, hostowanie serwerów gier.
